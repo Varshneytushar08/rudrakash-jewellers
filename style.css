@@ -1,0 +1,217 @@
+/* ===== HERO BACKGROUND SLIDER ===== */
+.hero-slider {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    animation: slideShow 16s infinite;
+    position: relative;
+}
+
+/* Dark overlay for text readability */
+.overlay {
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay h1 {
+    color: #b8860b;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+.overlay p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    padding: 12px 24px;
+    background-color: #b8860b;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* ===== SLIDER ANIMATION ===== */
+@keyframes slideShow {
+    0% {
+        background-image: url("gold1.jpg");
+    }
+    25% {
+        background-image: url("gold2.jpg");
+    }
+    50% {
+        background-image: url("silver1.jpg");
+    }
+    75% {
+        background-image: url("silver2.jpg");
+    }
+    100% {
+        background-image: url("gold1.jpg");
+    }
+}
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: #0f0f0f;
+    color: #f5f5f5;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: linear-gradient(90deg, #000000, #1c1c1c);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #b8860b;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 38px;
+    color: #b8860b;
+    letter-spacing: 2px;
+}
+
+.header p {
+    margin-top: 8px;
+    color: #ddd;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+.navbar a {
+    color: #f5f5f5;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.navbar a:hover {
+    background-color: #b8860b;
+    color: #000;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #b8860b;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* ===== PRODUCT GRID ===== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* ===== PRODUCT CARD ===== */
+.product-card {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-card h3 {
+    color: #b8860b;
+    margin: 12px 0 5px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* ===== WHATSAPP BUTTON ===== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 55px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* ===== ORDER FORM ===== */
+.order-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form input,
+.order-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.submit-btn {
+    background-color: #b8860b;
+    color: #000;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+/* LIVE PRICE BAR */
+.price-bar {
+    background-color: #000;
+    color: #b8860b;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #333;
+}
+.price-note {
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 6px;
+    font-style: italic;
+}
